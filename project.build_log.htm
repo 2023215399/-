@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 2, LIC=NQQMA-1EUJ8-633MB-2NRCJ-6TJ5B-CF3EW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\stm32文件夹\作业1\project.uvprojx
+Project File Date:  04/20/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+user\main.c(34): error:  #20: identifier "GPI0_InitTypeDef" is undefined
+  GPI0_InitTypeDef GPIO_InitStruct;
+user\main.c(46): warning:  #223-D: function "RCC_APB2Per\u94c6phClockCmd" declared implicitly
+  RCC_APB2Per铆phClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_AFIO,ENABLE);
+user\main.c(48): error:  #20: identifier "GPIO_InitStruct" is undefined
+  GPIO_InitStruct.GPIO_Pin=GPIO_Pin_0;
+user\main.c(54): error:  #20: identifier "NVIC_Initstruct" is undefined
+  NVIC_Initstruct.NVIC_IRQChannel=EXTIO_IRQn;
+user\main.c(54): error:  #20: identifier "EXTIO_IRQn" is undefined
+  NVIC_Initstruct.NVIC_IRQChannel=EXTIO_IRQn;
+user\main.c(60): warning:  #174-D: expression has no effect
+  
+XTI InitStruct.EXTI_Line=EXTI_Line0;
+user\main.c(60): error:  #65: expected a ";"
+  
+XTI InitStruct.EXTI_Line=EXTI_Line0;
+user\main.c(61): warning:  #174-D: expression has no effect
+  
+XTI Initstruct.EXTI_LineCmd=ENABLE;
+user\main.c(61): error:  #65: expected a ";"
+  
+XTI Initstruct.EXTI_LineCmd=ENABLE;
+user\main.c(43): warning:  #177-D: variable "GPIO_Initstruct"  was declared but never referenced
+  GPIO_InitTypeDef GPIO_Initstruct;
+user\main.c(81): error:  #79: expected a type specifier
+  do{
+user\main.c(81): error:  #18: expected a ")"
+  do{
+user\main.c(81): error:  #90: function returning function is not allowed
+  do{
+user\main.c(90): error:  #65: expected a ";"
+  isLongPress = 1://
+user\main.c(99): error:  #20: identifier "buttonPressCounte" is undefined
+  buttonPressCounte=0;//
+user\main.c(111): warning:  #174-D: expression has no effect
+  
+VIC PriorityGroupConfig (NVIC_PriorityGroup_2);
+user\main.c(111): error:  #65: expected a ";"
+  
+VIC PriorityGroupConfig (NVIC_PriorityGroup_2);
+user\main.c: 5 warnings, 12 errors
+".\Objects\project.axf" - 12 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
